@@ -497,6 +497,21 @@ runners.forEach(function(element) {
   emailList.push(`${element.email}`);
 });
 console.log(emailList);
+
 // Problem 2
 
+let lowCaps = [];
+const runnersToLowerCase = runners.map(item => {
+  return item.first_name.toLowerCase();
+});
+console.log(runnersToLowerCase);
+
 // Problem 3
+
+let info = [];
+runners.forEach(function(element) {
+  info.push(
+    `${element.company_name} ${element.shirt_size} ${element.donation}`
+  );
+});
+console.log(info);
